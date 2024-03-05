@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUOLINGO</title>
+    <link rel="icon" type="image/x-icon" href="https://d35aaqx5ub95lt.cloudfront.net/images/duolingo-touch-icon2.png">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <header class="hheader">
+        <!--Barra de navegacion-->
+        <div class="nav-bg">
+            <nav class="nav-principal contenedor">
+                <h1>
+                    <img alt="Duolingo" class="nav-img" src="https://d35aaqx5ub95lt.cloudfront.net/images/splash/f92d5f2f7d56636846861c458c0d0b6c.svg">
+                </h1>
+                <div>
+                    <ul class="nav_menu">
+                        <li>
+                            <a id="idioma_btn" href="#">idioma de la pagina ▼</a>
+                            <ul id="menu_vertical" class="menuvertical" style="display: none;">
+                                <li><a href="#"><img src="./imagenes/descargar.png" alt="Español"> Español</a></li>
+                                <li><a href="#"><img src="./imagenes/images.png" alt="Alemán"> Alemán </a></li>
+                                <li><a href="#"><img src="./imagenes/pics2648-400x267.gif" alt="Japonés"> Japonés </a></li>
+                                <li><a href="#"><img src="./imagenes/Francia.gif" alt="Francés"> Francés </a></li>
+                                <li><a href="#"><img src="./imagenes/Flag_of_the_United_States.svg" alt="Inglés"> Inglés </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!--la primera seccion de la pagina donde se encuentra los primero dos botenes de empeza y cuenta-->
+        <section>
+            <div class="img_inicio">
+                <img src="https://media.tenor.com/Njj3k4BH8LMAAAAi/duolingo-bird.gif" alt="Imagengif" id="gif">
+            </div>
+            <div class="texto_inicio">
+                <p>¡La forma divertida, efectiva y gratis de aprender un idioma!</p>
+                <button class="empieza">¡Empieza ahora!</button>
+                <button class="cuenta">Ya tengo una cuenta</button>
+            </div>
+        </section>
+        <!--El menu de las banderas-->
+        <div class="menu-container">
+            <button class="scroll-left-btn" onclick="scrollMenuLeft()">&#60;</button>
+            <div class="menu">
+                <span><img src="https://static.wikia.nocookie.net/duolingo/images/7/79/Ingles.png/revision/latest?cb=20230710181050&path-prefix=es" 
+                            alt="Bandera de idioma" width="40" height="40"></span>                  
+                <span class="idiomatext">Ingles</span>
+                <span><img src="https://static.wikia.nocookie.net/duolingo/images/a/a0/Francia_bandera.png/revision/latest?cb=20230710181232&path-prefix=es"
+                            alt="Bandera de francia" width="40" height="40"></span>
+                <span class="idiomatext">Frances</span>
+                <span><img src="https://static.wikia.nocookie.net/duolingo/images/4/4a/Alemania_bandera.png/revision/latest?cb=20230715181339&path-prefix=es"
+                            alt="Bandera de idioma" width="40" height="40"></span>
+                <span class="idiomatext">Aleman</span>
+                <span><img src="https://static.wikia.nocookie.net/duolingo/images/4/4b/Italia_bandera.png/revision/latest?cb=20230710180332&path-prefix=es"
+                            alt="Bandera de idioma" width="40" height="40"></span>
+                <span class="idiomatext">Italiano</span>
+                <span><img src="https://static.wikia.nocookie.net/duolingo/images/1/17/Brazil_bandera.png/revision/latest?cb=20230710181600&path-prefix=es"
+                            alt="Bandera de idioma" width="40" height="40"></span>
+                <span class="idiomatext">Portugues</span>
+                <span><img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Catalonia.svg" alt="Bandera de idioma" width="40" height="40"></span>
+                <span class="idiomatext">Catalan</span>
+            </div>
+            <button class="scroll-right-btn" onclick="scrollMenuRight()">&#62;</button>
+        </div>
+    </header>
+    <main class="principal">
+        <!--texto de pagina-->
+        <section>
+            <div class="titulo1">
+                <h1>
+                    divertido, efectivo y gratis
+                </h1>
+               
+            </div>
+            <div class="parrafo1">
+                <p>
+                    Aprender con Duolingo es divertido y <span class="negrita">los estudios demuestran que funciona</span>. ¡En nuestras lecciones cortas ganarás 
+                    puntos y habilitarás nuevas unidades al mismo tiempo que desarrollas tus habilidades de comunicación en la vida 
+                    real!
+                </p>
+            </div>
+            <div class="img1">
+                <img src="https://media1.tenor.com/m/Bf2bF19nELUAAAAC/duolingo-bea.gif" alt="Imagengif" id="gif">
+            </div>
+        </section>
+       <section>
+        <div class="img2">
+            <img src="https://centaur-wp.s3.eu-central-1.amazonaws.com/creativereview/prod/content/uploads/2023/02/LessonEnd_Lily.gif?auto=compress,format&q=60&w=375&h=398"
+            alt="Imagengif" id="gif">
+        </div>
+        <div class="titulo2">
+            <h1>respaldado por la ciencia</h1>
+        </div>
+        <div class="parrafo2">
+            <p>Gracias a la combinación de métodos de enseñanza respaldados por la ciencia y un contenido entretenido, creamos cursos 
+                que enseñan de forma eficiente a leer, escribir, entender y hablar en otros idiomas.
+            </p>
+        </div>
+       </section>
+       <section>
+        <div class="titulo3">
+            <h1>mantén tu motivación</h1>
+        </div>
+        <div class="parrafo3">
+            <p>
+                Nuestras funcionalidades y desafíos son divertidos y hacen que aprender se sienta como un juego. ¡Vas a poder formar un 
+                hábito de aprendizaje sin esfuerzo! Y, por supuesto, recibirás recordatorios de nuestra adorable mascota, Duo, el búho.
+            </p>
+        </div>
+        <div class="img3">
+            <img src="https://www.cmu.edu/news/stories/archives/2020/january/images/duolingo-reaches-one-billion_900x600.gif" alt="Imagengif"
+            id="gif" height="450rem" width="450rem">
+        </div>
+       </section>
+       <section>
+        <div class="img4">
+            <img src="https://nexusstudios.com/app/uploads/2020/09/Duolingo_Asset_2.gif" alt="Imagengif" id="gif" 
+            height="350rem" width="450rem">
+        </div>
+        <div class="titulo4">
+            <h1>aprendizaje personalizado</h1>
+        </div>
+        <div class="parrafo4">
+            <p>
+                Al combinar lo mejor de la inteligencia artificial y las ciencias de idiomas, las lecciones se adaptan según tu desempeño
+                 para ayudarte a aprender al nivel adecuado y a tu propio ritmo.
+            </p>
+        </div>
+       </section>
+       <!--La seccion de descarga-->
+       <section>
+        <div class="descargas">
+            <div class="text_descarga">
+                <h1>aprende cuando quieras y donde quieras</h1>
+            </div>
+            <div class="button_descarga">
+                <button class="apple">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-apple" 
+                    width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" 
+                    stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.286 7.008c-3.216 0 -4.286 3.23 
+                    -4.286 5.92c0 3.229 2.143 8.072 4.286 8.072c1.165 -.05 1.799 -.538 3.214 -.538c1.406 0 1.607 .538 3.214 .538s4.286 -3.229 
+                    4.286 -5.381c-.03 -.011 -2.649 -.434 -2.679 -3.23c-.02 -2.335 2.589 -3.179 2.679 -3.228c-1.096 -1.606 -3.162 -2.113 -3.75 
+                    -2.153c-1.535 -.12 -3.032 1.077 -3.75 1.077c-.729 0 -2.036 -1.077 -3.214 -1.077z" /><path d="M12 4a2 2 0 0 0 2 -2a2 2 0 0 0
+                     -2 2" /></svg>
+                     Descargar en la app store
+                </button>
+                <button class="play">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-google-play" width="24" 
+                    height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" 
+                    stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 3.71v16.58a.7 .7 0 0 0 1.05 
+                    .606l14.622 -8.42a.55 .55 0 0 0 0 -.953l-14.622 -8.419a.7 .7 0 0 0 -1.05 .607z" /><path d="M15 9l-10.5 11.5" />
+                    <path d="M4.5 3.5l10.5 11.5" /></svg>
+                    Disponible en Google play
+                </button>
+            </div>
+            <div class="img_descarga">
+                <img src="https://nexusstudios.com/app/uploads/2020/09/Duolingo_Asset_1.gif" alt="Imagengif" id="gif">
+            </div>
+        </div>
+       </section>
+       <section>
+        <!--La seccion del super doulingo-->
+        <div class="super">
+            <div class="img_super">
+                <img src="https://media.tenor.com/Kh3aquYop4MAAAAM/buff-duolingo-swole-duolingo.gif" height="450rem" width="450rem" alt="Imagengif"
+                id="gif">
+            </div>
+            <div class="img1_super">
+                <img src="https://d35aaqx5ub95lt.cloudfront.net/images/splash/3a733db6d6873e1a915f70cf72554ce3.svg">
+                <button class="boton_super">Prueba 2 semanas gratis</button>
+            </div>
+        </div>
+       </section>
+       <!--Texto de la pagina-->
+       <section>
+        <div class="titulo5">
+            <h1>duolingo english test</h1>
+        </div>
+        <div class="parrafo5">
+            <p>Nuestro examen de inglés es conveniente, rápido y económico. El Duolingo English Test integra los últimos avances en la 
+                ciencia e inteligencia artificial para dar a todas las personas la posibilidad de elegir dónde y cuándo hacer el examen 
+                y que puedan dar lo mejor de sí.</p>
+        </div>
+        <div>
+            <button class="boton_certificado">Certifica tu ingles</button>
+        </div>
+        <div class="img5">
+            <img src="https://www.animationmagazine.net/wordpress/wp-content/uploads/LessonEnd_Oscar.gif" alt="Imagengif" id="gif">
+        </div>
+       </section>
+       <section>
+        <div class="img6">
+            <img src="https://i.pinimg.com/originals/ca/05/d1/ca05d1cf1a034f9b2eafc644c102c551.gif" alt="Imagengif" id="gif">
+        </div>
+        <div class="titulo6">
+            <h1>duolingo for schools</h1>
+        </div>
+        <div class="parrafo6">
+            <p>Maestras y maestros: ¡estamos para ayudarlos! Nuestra herramienta gratuita ayuda a tus estudiantes a aprender idiomas a 
+                través de la app de Duolingo, tanto dentro como fuera del salón de clases.</p>
+        </div>
+        <div>
+            <button class="potencia">Potencia tu salón de clases</button>
+        </div>
+       </section>
+       <section>
+        <div class="titulo7">
+            <h1>duolingo abc</h1>
+        </div>
+        <div class="parrafo7">
+            <p>¡Desde aprender idiomas hasta alfabetismo! Con lecciones de fonética y cuentos divertidos, Duolingo ABC enseña a niños y 
+                niñas de entre 3 y 8 años a leer y escribir… ¡y es totalmente gratis!</p>
+        </div>
+        <div>
+            <button class="abc">Conoce Duolingo ABC</button>
+        </div>
+        <div class="img7">
+            <img src="https://cdn.dribbble.com/users/1672945/screenshots/6205028/par_jump_rock_dribbble.gif" alt="Imagengif" id="gif">
+        </div>
+       </section>
+       <section>
+        <div class="img8">
+            <img src="https://centaur-wp.s3.eu-central-1.amazonaws.com/creativereview/prod/content/uploads/2023/02/LessonEnd_Zari.gif?auto=compress,format&q=60&w=375&h=398"
+            alt="Imagengif" id="gif">
+        </div>
+        <div class="titulo8">
+            <h1>duolingo math</h1>
+        </div>
+        <div class="parrafo8">
+            <p>¡Prueba nuestras lecciones cortas y gratis para matemáticas! Con Duolingo Math, los estudiantes podrán adelantarse en
+                 sus clases de matemáticas y los adultos podrán practicar para mejorar su destreza matemática.</p>
+        </div>
+        <div>
+            <button class="math">Mejora en matemática</button>
+        </div>
+       </section>
+       <section>
+        <div class="aprendeIdioma">
+            <h1>aprende idiomas con duolingo</h1>
+            <button class="boton_aprender">Empieza ahora</button>
+        </div>
+        <div class="img_aprender">
+            <img src="https://technical.ly/wp-content/uploads/2022/10/Eddy_jumprope-1.gif" alt="Imagengif" id="gif">
+        </div>
+       </section>
+    </main>
+    <!--pie de la pagina-->
+    <footer id="pie_duoling">
+        <div id="container">
+            <div id="footer_mo1">
+                <h2>
+                    Sobre nosotros
+                </h2>
+                <ul>
+                    <li>
+                        <a href="#">
+                            Cursos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Misión
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Método de enseñanza
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Eficacia
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Equipo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Investigación
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Empleo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Guía para uso de marca
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Tienda
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Prensa
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Inversionistas
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Contáctanos
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="footer_mo1">
+                <h2>
+                    Productos
+                </h2>
+                <ul>
+                    <li>
+                        <a href="#">
+                            Duolingo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Duolingo for Schools
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Duolingo English Test
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Podcast
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Duolingo for Business
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Súper Duolingo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Regala Súper Duolingo
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="footer_mo1">
+                <h2>
+                    Aplicaciones
+                </h2>
+                <ul>
+                    <li>
+                        <a href="#">
+                            Duolingo para Android
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Duolingo para iOS
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="footer_mo1">
+                <h2>
+                    Ayuda y soporte
+                </h2>
+                <ul>
+                    <li>
+                        <a href="#">
+                            App de Duolingo
+                        </a>
+                        <li>
+                            <a href="#">
+                                Schools
+                            </a>
+                            <li>
+                                <a href="#">
+                                    Duolingo English Test
+                                </a>
+                                <li>
+                                    <a href="#">
+                                        Estado
+                                    </a>
+                                </li>
+                            </li>
+                        </li>
+                    </li>
+                </ul>
+            </div>
+            <div id="footer_mo1">
+                <h2>
+                    Términos y privacidad
+                </h2>
+                <ul>
+                    <li>
+                        <a href="#">
+                            Normas de la comunidad
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Términos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Privacidad
+                        </a>
+                    </li>
+                </ul>
+                <h2>
+                    Social
+                </h2>
+                <ul>
+                    <li>
+                        <a href="#">
+                            Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            YouTube
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="idiomas_duoling">
+            <ul>
+                <ul class="_3iodW">
+                    <li class="_30ib7">
+                        <a class="_1FJ6K" href="//ar.duolingo.com" tabindex="0">
+                            العربية
+                        </a>
+                    </li>
+                    <li class="_30ib7">
+                        <a class="_1FJ6K" href="//bn.duolingo.com" tabindex="0">
+                            বাংলা
+                        </a>
+                    </li>
+                    <li class="_30ib7">
+                        <a class="_1FJ6K" href="//cs.duolingo.com" tabindex="0">
+                            Čeština
+                        </a>
+                    </li>
+                    <li class="_30ib7">
+                        <a class="_1FJ6K" href="//de.duolingo.com" tabindex="0">
+                            Deutsch
+                        </a>
+                    </li>
+                    <li class="_30ib7">
+                        <a class="_1FJ6K" href="//el.duolingo.com" tabindex="0">
+                            Ελληνικά
+                        </a>
+                    </li>
+                    <li class="_30ib7">
+                        <a class="_1FJ6K" href="//en.duolingo.com" tabindex="0">
+                            English
+                        </a>
+                    </li>
+                    <li class="_30ib7">
+                        <a class="_1FJ6K" href="//es.duolingo.com" tabindex="0">
+                            Español
+                        </a>
+                    </li>
+                    <li class="_30ib7">
+                        <a class="_1FJ6K" href="//fr.duolingo.com" tabindex="0">
+                            Français
+                        </a>
+                    </li>
+                    <li class="_30ib7">
+                        <a class="_1FJ6K" href="//hi.duolingo.com" tabindex="0">
+                            हिंदी
+                        </a>
+                    </li>
+                    <li class="_30ib7">
+                        <a class="_1FJ6K" href="//hu.duolingo.com" tabindex="0">
+                            Magyar
+                        </a>
+                    </li>
+                    <li class="_30ib7">
+                        <a class="_1FJ6K" href="//id.duolingo.com" tabindex="0">
+                            Bahasa Indonesia
+                        </a>
+                    </li>
+                    <li class="_30ib7">
+                        <a class="_1FJ6K" href="//it.duolingo.com" tabindex="0">
+                            Italiano
+                        </a>
+                    </li>
+                    <li class="_30ib7">
+                        <a class="_1FJ6K" href="//ja.duolingo.com" tabindex="0">
+                            日本語
+                        </a>
+                    </li>
+                    <li class="_30ib7">
+                        <a class="_1FJ6K" href="//ko.duolingo.com" tabindex="0">
+                            한국어
+                        </a>
+                    </li>
+                    <li class="_30ib7">
+                        <a class="_1FJ6K" href="//dn.duolingo.com" tabindex="0">
+                            Nederlands
+                        </a>
+                    </li>
+                    <li class="_30ib7">
+                        <a class="_1FJ6K" href="//pl.duolingo.com" tabindex="0">
+                            Polski
+                        </a>
+                    </li>
+                    <li class="_30ib7">
+                        <a class="_1FJ6K" href="//pt.duolingo.com" tabindex="0">
+                            Português
+                        </a>
+                    </li>
+                    <li class="_30ib7">
+                        <a class="_1FJ6K" href="//ro.duolingo.com" tabindex="0">
+                            Română
+                        </a>
+                    </li>
+                    <li class="_30ib7">
+                        <a class="_1FJ6K" href="//ru.duolingo.com" tabindex="0">
+                            Русский
+                        </a>
+                    </li>
+                    <li class="_30ib7">
+                        <a class="_1FJ6K" href="//te.duolingo.com" tabindex="0">
+                            తెలుగు
+                        </a>
+                    </li>
+                    <li class="_30ib7">
+                        <a class="_1FJ6K" href="//th.duolingo.com" tabindex="0">
+                            ภาษาไทย
+                        </a>
+                    </li>
+                    <li class="_30ib7">
+                        <a class="_1FJ6K" href="//tl.duolingo.com" tabindex="0">
+                            Tagalog
+                        </a>
+                    </li>
+                    <li class="_30ib7">
+                        <a class="_1FJ6K" href="//tr.duolingo.com" tabindex="0">
+                            Türkçe
+                        </a>
+                    </li>
+                    <li class="_30ib7">
+                        <a class="_1FJ6K" href="//uk.duolingo.com" tabindex="0">
+                            Українською
+                        </a>
+                    </li>
+                    <li class="_30ib7">
+                        <a class="_1FJ6K" href="//vi.duolingo.com" tabindex="0">
+                            Tiếng Việt
+                        </a>
+                    </li>
+                    <li class="_30ib7">
+                        <a class="_1FJ6K" href="//zs.duolingo.com" tabindex="0">
+                            中文
+                        </a>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </footer>
+    <script src="duolingo.js"></script>
+</body>
+</html>
